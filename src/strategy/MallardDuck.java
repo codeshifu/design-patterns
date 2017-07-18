@@ -1,4 +1,4 @@
-package strategypattern;
+package strategy;
 
 public class MallardDuck extends Duck {
     @Override
