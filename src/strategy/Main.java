@@ -10,13 +10,18 @@ public class Main {
 
         Duck mallardDuck = new MallardDuck();
         Duck rubberDuck = new RubberDuck();
+        Duck decoyDuck = new DecoyDuck();
 
         listOfDucks.add(mallardDuck);
         listOfDucks.add(rubberDuck);
+        listOfDucks.add(decoyDuck);
 
         // change behaviour at runtime
         rubberDuck.setFlyBehaviour(new FlyNoWay());
         rubberDuck.setQuackBehaviour(new MuteQuack());
+
+        decoyDuck.setQuackBehaviour(new MuteQuack());
+        decoyDuck.setFlyBehaviour(new FlyNoWay());
 
         for (Duck duck : listOfDucks) {
             duck.display();
