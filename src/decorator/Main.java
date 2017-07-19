@@ -8,6 +8,7 @@ public class Main {
 
         Beverage houseBlend = new HouseBlend();
         houseBlend = new Soy(new Milk(houseBlend));
+
         System.out.println(houseBlend.toString());
     }
 }
