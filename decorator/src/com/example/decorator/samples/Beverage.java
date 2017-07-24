@@ -1,4 +1,4 @@
-package com.example.decorator;
+package com.example.decorator.samples;
 
 import java.text.DecimalFormat;
 

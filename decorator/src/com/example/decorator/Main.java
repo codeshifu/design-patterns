@@ -1,14 +1,33 @@
 package com.example.decorator;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
 
     public static void main(String[] args) {
-        Beverage espresso = new Espresso();
-        System.out.println(espresso.toString());
+        List<IphoneComponent> listOfIphones = new ArrayList<>();
+        IphoneComponent iphone5 = new IPhone5();
+        IphoneComponent iphone5C = new IPhone5C();
 
-        Beverage houseBlend = new HouseBlend();
-        houseBlend = new Soy(new Milk(houseBlend));
+        System.out.println(
+                        "=======================" +
+                        "\nBEFORE UPGRADE\n" +
+                        "======================="
+        );
 
-        System.out.println(houseBlend.toString());
+        System.out.println(iphone5.toString() + "\n");
+        System.out.println(iphone5C.toString() + "\n");
+        System.out.println(
+                "=======================" +
+                        "\nAFTER UPGRADE\n" +
+                        "======================="
+        );
+
+        iphone5 = new Storage16GB(iphone5);
+        iphone5C = new Memory4GB(new Storage16GB(iphone5C));
+
+        System.out.println(iphone5.toString() + "\n");
+        System.out.println(iphone5C.toString() + "\n");
     }
 }

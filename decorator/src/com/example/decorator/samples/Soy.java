@@ -1,4 +1,4 @@
-package com.example.decorator;
+package com.example.decorator.samples;
 
 public class Soy extends CondimentDecorator {
 

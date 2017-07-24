@@ -1,4 +1,4 @@
-package com.example.decorator;
+package com.example.decorator.samples;
 
 public abstract class CondimentDecorator extends Beverage {
     protected Beverage beverage;

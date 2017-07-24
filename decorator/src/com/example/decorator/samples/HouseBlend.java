@@ -1,4 +1,4 @@
-package com.example.decorator;
+package com.example.decorator.samples;
 
 public class HouseBlend extends Beverage {
     public HouseBlend() {
