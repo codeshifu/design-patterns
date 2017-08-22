@@ -7,7 +7,7 @@ public class Main {
 
     public static void main(String[] args) {
         List<IphoneComponent> listOfIphones = new ArrayList<>();
-        IphoneComponent iphone5 = new IPhone5();
+        IphoneComponent iPhone5 = new IPhone5();
         IphoneComponent iphone5C = new IPhone5C();
 
         System.out.println(
@@ -16,7 +16,7 @@ public class Main {
                         "======================="
         );
 
-        System.out.println(iphone5.toString() + "\n");
+        System.out.println(iPhone5.toString() + "\n");
         System.out.println(iphone5C.toString() + "\n");
         System.out.println(
                 "=======================" +
@@ -24,10 +24,10 @@ public class Main {
                         "======================="
         );
 
-        iphone5 = new Storage16GB(iphone5);
+        iPhone5 = new Storage16GB(iPhone5);
         iphone5C = new Memory4GB(new Storage16GB(iphone5C));
 
-        System.out.println(iphone5.toString() + "\n");
+        System.out.println(iPhone5.toString() + "\n");
         System.out.println(iphone5C.toString() + "\n");
     }
 }
